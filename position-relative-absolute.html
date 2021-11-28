@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details About Position Relative & Absolute CSS</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+        }
+
+        #box-1 {
+            background-color: lightblue;
+        }
+
+        #box-2 {
+            background-color: rgb(225, 173, 230);
+            top: -30px;
+            left: 50px;
+            position: relative;
+        }
+
+        #box-3 {
+            background-color: rgb(175, 230, 173);
+        }
+
+
+
+        .containe-2 {
+            position: relative;
+            background-color: skyblue;
+            height: 400px;
+        }
+
+        .box-2 {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+        }
+
+        #box-4 {
+            background-color: rgb(255, 73, 73);
+        }
+
+        #box-5 {
+            background-color: rgb(57, 60, 214);
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            /* top: -30px;
+            left: 50px; */
+        }
+
+        #box-6 {
+            background-color: rgb(57, 224, 79);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Explore Position Relative and Absolute one more time!</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet delectus dicta earum explicabo sequi modi
+        voluptates nulla, iusto hic vel dolore. Repellendus quos rem fugit reprehenderit praesentium quia
+        exercitationem! Illum.</p>
+
+
+
+    <div class="container">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box" id="box-3">box-3</div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <div class="containe-2">
+        <div class="box-2" id="box-4">box-1</div>
+        <div class="box-2" id="box-5">box-2</div>
+        <div class="box-2" id="box-6">box-3</div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

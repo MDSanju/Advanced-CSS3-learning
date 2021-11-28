@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid vs Flexbox details about those</title>
+    <style>
+        /* main {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid;
+            height: 600px;
+        } */
+
+        .users-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .user {
+            height: 250px;
+            width: 250px;
+            margin: 10px;
+            background-color: rgb(179, 255, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+
+
+
+        .boxes-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-row-gap: 36px;
+            grid-column-gap: 20px;
+        }
+
+        .box {
+            height: 250px;
+            width: 250px;
+            margin: 10px;
+            background-color: rgb(72, 22, 253);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="users-container">
+            <div id="user-1" class="user">
+                <h2>Box-1</h2>
+            </div>
+            <div id="user-2" class="user">
+                <h2>Box-2</h2>
+            </div>
+            <div id="user-3" class="user">
+                <h2>Box-3</h2>
+            </div>
+            <div id="user-4" class="user">
+                <h2>Box-4</h2>
+            </div>
+            <div id="user-5" class="user">
+                <h2>Box-5</h2>
+            </div>
+            <div id="user-6" class="user">
+                <h2>Box-6</h2>
+            </div>
+            <div id="user-7" class="user">
+                <h2>Box-7</h2>
+            </div>
+            <div id="user-8" class="user">
+                <h2>Box-8</h2>
+            </div>
+            <div id="user-9" class="user">
+                <h2>Box-9</h2>
+            </div>
+            <div id="user-10" class="user">
+                <h2>Box-10</h2>
+            </div>
+        </section>
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+        <section class="boxes-container">
+            <div id="box-1" class="box">
+                <h2>User-1</h2>
+            </div>
+            <div id="box-2" class="box">
+                <h2>User-2</h2>
+            </div>
+            <div id="box-3" class="box">
+                <h2>User-3</h2>
+            </div>
+            <div id="box-4" class="box">
+                <h2>User-4</h2>
+            </div>
+            <div id="box-5" class="box">
+                <h2>User-5</h2>
+            </div>
+            <div id="box-6" class="box">
+                <h2>User-6</h2>
+            </div>
+            <div id="box-7" class="box">
+                <h2>User-7</h2>
+            </div>
+            <div id="box-8" class="box">
+                <h2>User-8</h2>
+            </div>
+            <div id="box-9" class="box">
+                <h2>User-9</h2>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
